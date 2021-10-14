@@ -9,12 +9,12 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>springboot-mybatis-plus</artifactId>
+    <artifactId>springboot-elastic-job-lite</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>springboot-mybatis-plus</name>
-    <description>springboot-mybatis-plus</description>
+    <name>springboot-elastic-job-lite</name>
+    <description>elastic-job 分布式定时任务</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -24,30 +24,13 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.apache.shardingsphere.elasticjob</groupId>
+            <artifactId>elasticjob-lite-spring-boot-starter</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.freemarker</groupId>
-            <artifactId>freemarker</artifactId>
-            <version>2.3.28</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.4.2</version>
-        </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-generator</artifactId>
-            <version>3.4.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -89,7 +72,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.turboqiang.springbootmybatisplus.SpringbootMybatisPlusApplication</mainClass>
+                    <mainClass>com.turboqiang.springbootelasticjoblite.SpringbootElasticJobLiteApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

@@ -1,0 +1,14 @@
+elasticjob:
+    jobs:
+        my-simple-job:
+            cron: 0/5 * * * * ?
+            elastic-job-class: com.turboqiang.springbootelasticjoblite.jobs.MySimpleJob
+            sharding-total-count: 1
+    reg-center:
+        namespace: elasticjob
+        server-lists: localhost:2181
+server:
+    port: 8080
+spring:
+    application:
+        name: springboot-elastic-job-lite

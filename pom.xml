@@ -26,6 +26,7 @@
 
     <modules>
         <module>springboot-mybatis-plus</module>
+        <module>springboot-elastic-job-lite</module>
     </modules>
 
     <build>
